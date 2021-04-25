@@ -43,9 +43,8 @@ char *ft_itoa(int n)
 
 int getSumDigits(int num)
 {
-  int   res;
+  int res = 0;
 
-  res = 0;
   for (char *str = ft_itoa(num); *str; str++)
     res += *str - '0';
 
